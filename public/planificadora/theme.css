@@ -1,13 +1,13 @@
 :root {
-  --primary-color: #0077ff; /* Bright blue for key elements */
-  --secondary-color: #3399ff; /* Softer blue for secondary accents */
-  --accent-color: #66ccff; /* Lighter blue for highlights */
-  --background-color: #f5faff; /* Very light blue/white for background */
-  --text-color: #1a1a1a; /* Almost black for high contrast */
-  --button-color: #005fcc; /* Strong blue for buttons */
-  --button-hover-color: #004bb5; /* Darker blue on hover */
-  --button-text-color: #ffffff; /* White text on buttons */
-  --shadow-color: rgba(0, 0, 0, 0.1); /* Subtle shadows */
-  --border-radius: 8px; /* Rounded corners */
-  --transition-speed: 0.3s; /* Smooth transitions */
+  --primary-color: #002f6c; /* Deep navy blue */
+  --secondary-color: #00509e; /* Bold, slightly lighter navy */
+  --accent-color: #3399cc; /* Medium-light blue for accents */
+  --background-color: #f0f4f8; /* Cool light blue-gray background */
+  --text-color: #1c1f26; /* Dark neutral for readability */
+  --button-color: #003f88; /* Navy for buttons */
+  --button-hover-color: #002b66; /* Even darker navy on hover */
+  --button-text-color: #ffffff; /* White text for contrast */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  --border-radius: 6px; /* Softer rounded corners */
+  --transition-speed: 0.25s; /* Slightly faster transitions */
 }

@@ -9,7 +9,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import "./themes/base.css";
 
-const brand = "drop";
+const brand = "planificadora";
 const brandInfo = getBrand(brand);
 
 // Map component names to actual React components
