@@ -1,6 +1,13 @@
 :root {
-  --primary-color: #00f320;
-  --secondary-color: #00b55b;
-  --background-color: #ffffff;
-  --text-color: #222222;
+  --primary-color: #0077ff; /* Bright blue for key elements */
+  --secondary-color: #3399ff; /* Softer blue for secondary accents */
+  --accent-color: #66ccff; /* Lighter blue for highlights */
+  --background-color: #f5faff; /* Very light blue/white for background */
+  --text-color: #1a1a1a; /* Almost black for high contrast */
+  --button-color: #005fcc; /* Strong blue for buttons */
+  --button-hover-color: #004bb5; /* Darker blue on hover */
+  --button-text-color: #ffffff; /* White text on buttons */
+  --shadow-color: rgba(0, 0, 0, 0.1); /* Subtle shadows */
+  --border-radius: 8px; /* Rounded corners */
+  --transition-speed: 0.3s; /* Smooth transitions */
 }

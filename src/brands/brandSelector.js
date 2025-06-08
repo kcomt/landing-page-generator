@@ -5,9 +5,12 @@ const getBrand = (brand) => {
   }
 
   let config;
+  let text;
   try {
     // Dynamically import the brand config
     config = require(`../brands/${brand}/${brand}.js`).default;
+    text = require(`../brands/${brand}/text.json`);
+    console.log("text", text);
   } catch (err) {
     console.error(`Brand config not found for: ${brand}`, err);
     return {
@@ -18,13 +21,20 @@ const getBrand = (brand) => {
   }
 
   // Load brand-specific CSS theme
-  const link = document.createElement("link");
-  link.rel = "stylesheet";
-  link.href = `/${brand}/theme.css`;
-  document.head.appendChild(link);
+  const linkTheme = document.createElement("link");
+  linkTheme.rel = "stylesheet";
+  linkTheme.href = `/${brand}/theme.css`;
+  document.head.appendChild(linkTheme);
+
+  // Load brand-specific custom overrides
+  const linkCustom = document.createElement("link");
+  linkCustom.rel = "stylesheet";
+  linkCustom.href = `/${brand}/custom.css`;
+  document.head.appendChild(linkCustom);
 
   return {
     brand,
+    text,
     ...config,
   };
 };

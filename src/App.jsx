@@ -26,14 +26,14 @@ const App = () => {
       <Header logo={brandInfo.logo} />
       <main>
         <section id="hero">
-          <HeroSection />
+          <HeroSection text={brandInfo.text} />
         </section>
 
         {brandInfo.components?.map((componentKey) => {
           const Component = componentMap[componentKey];
           return Component ? (
             <section id={componentKey} key={componentKey}>
-              <Component />
+              <Component text={brandInfo.text} />
             </section>
           ) : null;
         })}
